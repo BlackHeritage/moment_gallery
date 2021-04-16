@@ -1,0 +1,81 @@
+/* Buttons */
+.btn {
+  color: #fff;
+  margin: 1rem 2rem;
+  padding: 0.75rem 1rem;
+  border: 1px solid #fff;
+  z-index: 1;
+  transition: all 0.2s ease-in;
+  &:hover {
+    color: rgba(0, 0, 0, 0.8) !important;
+    background: #fff !important;
+  }
+}
+.btn-dark {
+  color: #444;
+  border: 1px solid #444;
+  transition: all 0.1s ease-in;
+  &:hover {
+    background: #444;
+    color: #fff;
+  }
+}
+
+/* Containers */
+.container {
+  max-width: 600rem;
+  margin: 0 auto;
+  padding: 2rem 4rem;
+  margin: 0rem 4rem;
+}
+section {
+  width: 100%;
+  margin: 0 auto;
+  text-align: center;
+}
+.center-grid {
+  display: grid;
+  place-items: center;
+}
+.py-1 {
+  padding: 1rem;
+}
+.py-2 {
+  padding: 2rem;
+}
+.py-3 {
+  padding: 3rem;
+}
+.py-4 {
+  padding: 4rem;
+}
+
+// Bottom Line
+.bottom-line {
+  width: 6rem;
+  height: 2px;
+  background: #000;
+  margin: 0 auto;
+}
+
+// Margins
+.my-2 {
+  margin: 2rem;
+}
+.mgt-5rem {
+  margin-top: 5rem;
+}
+.mgt-10rem {
+  margin-top: 10rem;
+}
+.mgt-100rem {
+  margin-top: 100rem;
+}
+.link {
+  color: blue;
+  font-size: 12px;
+  &:hover {
+    text-decoration: underline;
+    color: blue;
+  }
+}
