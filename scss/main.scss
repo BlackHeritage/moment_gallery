@@ -4,10 +4,10 @@
 @import "disclamer";
 @import "gallery";
 @import "menu";
-@import "mobile";
 @import "reset";
 @import "tablet";
 @import "footers";
+@import "mobile";
 
 body {
   font-family: "Roboto", sans-serif;
@@ -54,7 +54,6 @@ body {
   background: url(../img/showcase/showcase.jpg) no-repeat center center/cover;
   height: 100vh;
   position: relative;
-  overflow: hidden;
 
   z-index: -1;
   &:before {
@@ -78,9 +77,8 @@ body {
       height: 400px;
       margin-top: 15rem;
       p {
-        color: #fff;
+        color: #000;
         z-index: 10;
-        margin: 0.5rem 1rem;
         padding: 0.5rem 1rem;
         font-size: 1rem;
         animation-name: slideInTop;
