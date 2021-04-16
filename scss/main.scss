@@ -7,7 +7,6 @@
 @import "mobile";
 @import "reset";
 @import "tablet";
-@import "main";
 @import "footers";
 
 body {
@@ -43,163 +42,6 @@ body {
 /*////////////////////////*/
 /*//////// Showcase //////*/
 /*////////////////////////*/
-.hero {
-  background: url(../img/showcase/showcase.jpg) no-repeat center center/cover;
-  height: 100vh;
-  position: relative;
-  overflow: hidden;
-  z-index: -1;
-}
-.hero:before {
-  content: "";
-  position: absolute;
-  top: 0px;
-  left: 0px;
-  width: 100%;
-  height: 100%;
-  background: rgba(0, 0, 0, 0.5);
-  z-index: -10;
-}
-.hero #showcase {
-  display: grid;
-  place-content: center;
-  text-align: center;
-  height: auto;
-  padding: 0rem 2rem;
-}
-.hero #showcase .showcase-group {
-  width: 100%;
-  height: 400px;
-  margin-top: 10rem;
-}
-.hero #showcase .showcase-group p,
-.hero #showcase .showcase-group h3 {
-  color: #fff;
-  z-index: 10;
-}
-.hero #showcase .showcase-group p {
-  margin: 0.5rem 1rem;
-  padding: 0.5rem 1rem;
-  font-size: 1.4rem;
-  animation-name: slideInTop;
-  animation-timing-function: ease-in;
-  animation-duration: 750ms;
-  font-weight: bolder;
-  color: #eee;
-}
-.hero #showcase .showcase-group h3 {
-  margin: 0.5rem 1rem;
-  padding: 0.5rem 1rem;
-  font-size: 6rem;
-  animation-timing-function: ease-out;
-  animation-duration: 750ms;
-  animation-delay: 200ms;
-  margin-bottom: 2rem;
-}
-.hero #showcase .showcase-group a {
-  animation-name: appear;
-  animation-timing-function: ease-out;
-  animation-duration: 1500ms;
-  animation-delay: 500ms;
-  animation-iteration-count: 1;
-}
-
-/*////////////////////////*/
-/*////// Page Header /////*/
-/*////////////////////////*/
-.page-header {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  text-align: center;
-}
-.page-header h2 {
-  font-size: 8rem;
-  padding: 1rem;
-}
-
-/*////////////////////////*/
-/*/ ///// Flex Rows ///////*/
-/*////////////////////////*/
-.flex-container {
-  display: flex;
-  align-items: center;
-  text-align: center;
-}
-.flex-container img {
-  flex-grow: 0;
-  flex-shrink: 0;
-  height: auto;
-  width: 50%;
-}
-
-.flex-item {
-  width: 100%;
-  height: auto;
-  text-align: center;
-}
-.flex-item p {
-  font-size: 2rem;
-}
-.flex-item h3 {
-  font-size: 6rem;
-  padding: 2rem 1rem;
-  border-bottom: 1px solid rgba(0, 0, 0, 0.3);
-  max-width: 70%;
-  margin: auto;
-}
-.flex-item h4 {
-  font-size: 6rem;
-  padding: 2rem 1rem;
-}
-
-/* Row Reverse */
-.flex-reverse {
-  flex-direction: row-reverse;
-  background: var(--bg-light);
-}
-
-body {
-  font-family: "Roboto", sans-serif;
-  position: relative;
-  z-index: 1;
-  background: #fff;
-}
-
-// Navbar
-#navbar {
-  background: #1c1f23;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  text-align: center;
-  height: 70px;
-  width: 100%;
-  padding: 0px 10px;
-  opacity: 1;
-  position: fixed;
-  z-index: 1;
-}
-
-.hero {
-  background: url(../img/showcase/showcase.jpg) no-repeat center center/cover;
-  height: 100vh;
-  position: relative;
-  overflow: hidden;
-  z-index: -1;
-}
-.page-header {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  text-align: center;
-}
-.flex-container {
-  display: flex;
-  align-items: center;
-  text-align: center;
-}
-
 #navbar {
   .logo {
     color: #fff;
@@ -209,6 +51,12 @@ body {
   }
 }
 .hero {
+  background: url(../img/showcase/showcase.jpg) no-repeat center center/cover;
+  height: 100vh;
+  position: relative;
+  overflow: hidden;
+
+  z-index: -1;
   &:before {
     content: "";
     position: absolute;
@@ -216,7 +64,7 @@ body {
     left: 0px;
     width: 100%;
     height: 100%;
-    background: rgba(0, 0, 0, 0.5);
+    background: $bg-opacity-low;
     z-index: -10;
   }
   #showcase {
@@ -228,18 +76,18 @@ body {
     .showcase-group {
       width: 100%;
       height: 400px;
-      margin-top: 10rem;
+      margin-top: 15rem;
       p {
         color: #fff;
         z-index: 10;
         margin: 0.5rem 1rem;
         padding: 0.5rem 1rem;
-        font-size: 1.4rem;
+        font-size: 1rem;
         animation-name: slideInTop;
         animation-timing-function: ease-in;
         animation-duration: 750ms;
         font-weight: bolder;
-        color: #eee;
+        color: #ddd;
       }
       h3 {
         color: #fff;
