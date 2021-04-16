@@ -95,6 +95,62 @@ section {
 .text-align {
   text-align: center; }
 
+/*///////// Grid /////////*/
+/* Grid Item */
+#main-gallery {
+  margin-bottom: 2rem; }
+  #main-gallery .page-header h2 {
+    font-size: 4rem;
+    margin-top: 4rem; }
+  #main-gallery .section-header h3 {
+    font-size: 4rem;
+    margin: 0; }
+  #main-gallery .grid {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    margin: 2rem 0; }
+  #main-gallery .grid-item {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+    max-width: 350px;
+    margin: 0 auto;
+    padding: 1rem;
+    position: relative; }
+    #main-gallery .grid-item:before {
+      content: "";
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 0%;
+      opacity: 0;
+      background: rgba(0, 0, 0, 0.3);
+      transition: all 500ms ease; }
+    #main-gallery .grid-item:hover:before {
+      height: 100%;
+      opacity: 1; }
+    #main-gallery .grid-item:hover img {
+      transform: scale(0.95);
+      position: relative;
+      z-index: -1; }
+    #main-gallery .grid-item img {
+      width: auto;
+      height: 600px;
+      margin-top: 3rem;
+      transition: all 500ms ease-in; }
+    #main-gallery .grid-item h4 {
+      font-size: 3rem;
+      text-transform: uppercase;
+      margin: 0.5rem; }
+  #main-gallery .image-wrapper {
+    width: 100%;
+    height: 100%; }
+  #main-gallery .btn {
+    font-size: 1rem; }
+
 #disclamer {
   background: white; }
   #disclamer .disclamer-grid {
@@ -158,61 +214,6 @@ section {
     font-family: "Mukta", sans-serif;
     line-height: 0.8;
     margin: 5rem 0 1rem 0; }
-
-/*///////// Grid /////////*/
-/* Grid Item */
-#main-gallery {
-  margin-bottom: 2rem; }
-  #main-gallery .page-header h2 {
-    font-size: 4rem;
-    margin-bottom: 1rem; }
-  #main-gallery .section-header h3 {
-    font-size: 4rem;
-    margin: 0; }
-  #main-gallery .grid {
-    display: grid;
-    grid-template-columns: repeat(4, 1fr); }
-  #main-gallery .grid-item {
-    display: flex;
-    flex-direction: column;
-    text-align: center;
-    justify-content: center;
-    align-items: center;
-    max-width: 350px;
-    margin: 0 auto;
-    padding: 1rem;
-    position: relative; }
-    #main-gallery .grid-item:before {
-      content: "";
-      position: absolute;
-      top: 0;
-      left: 0;
-      width: 100%;
-      height: 0%;
-      opacity: 0;
-      background: rgba(0, 0, 0, 0.3);
-      transition: all 500ms ease; }
-    #main-gallery .grid-item:hover:before {
-      height: 100%;
-      opacity: 1; }
-    #main-gallery .grid-item:hover img {
-      transform: scale(0.95);
-      position: relative;
-      z-index: -1; }
-    #main-gallery .grid-item img {
-      width: auto;
-      height: 600px;
-      margin-top: 3rem;
-      transition: all 500ms ease-in; }
-    #main-gallery .grid-item h4 {
-      font-size: 3rem;
-      text-transform: uppercase;
-      margin: 0.5rem; }
-  #main-gallery .image-wrapper {
-    width: 100%;
-    height: 100%; }
-  #main-gallery .btn {
-    font-size: 1rem; }
 
 .menu-wrap {
   position: fixed;
@@ -538,6 +539,39 @@ li a:hover {
         margin: 0;
         color: #fff;
         text-align: right; } }
+
+#coming-soon {
+  background: url(../img/under-construction/under-construction.jpg) no-repeat center center/cover;
+  height: 100vh;
+  z-index: -100; }
+  #coming-soon:before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.3);
+    z-index: 0; }
+  #coming-soon .coming-soon {
+    color: #fff;
+    opacity: 0.9;
+    display: grid;
+    place-items: center;
+    height: inherit;
+    height: 100vh;
+    z-index: 0;
+    position: relative; }
+    #coming-soon .coming-soon h2 {
+      font-size: 8rem;
+      line-height: 130px;
+      margin-top: 5rem;
+      text-transform: uppercase;
+      font-weight: 900; }
+    #coming-soon .coming-soon h4 {
+      font-size: 5rem;
+      margin: 0;
+      color: #fff; }
 
 body {
   font-family: "Roboto", sans-serif;
