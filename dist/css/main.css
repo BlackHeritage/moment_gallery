@@ -202,18 +202,32 @@ section {
       transform: scale(0.95);
       position: relative;
       z-index: -1; }
-    #main-gallery .grid-item img {
-      width: auto;
-      height: 600px;
-      margin-top: 3rem;
-      transition: all 500ms ease-in; }
+    #main-gallery .grid-item:hover .img-details {
+      opacity: 1;
+      transform: scale(1); }
+    #main-gallery .grid-item .image-wrapper {
+      width: 100%;
+      height: 100%; }
+      #main-gallery .grid-item .image-wrapper img {
+        width: auto;
+        height: 600px;
+        margin-top: 3rem;
+        transition: all 500ms ease-in; }
+    #main-gallery .grid-item .img-details {
+      position: absolute;
+      place-content: center;
+      opacity: 0;
+      width: 100px;
+      height: 100px;
+      transition: all 500ms ease;
+      transform: scale(0);
+      color: #fff;
+      font-size: 2rem;
+      font-weight: bolder; }
     #main-gallery .grid-item h4 {
       font-size: 3rem;
       text-transform: uppercase;
       margin: 0.5rem; }
-  #main-gallery .image-wrapper {
-    width: 100%;
-    height: 100%; }
   #main-gallery .btn {
     font-size: 1rem; }
 
@@ -327,8 +341,7 @@ section {
     padding: 1rem;
     display: flex;
     align-items: center;
-    justify-content: center;
-    background: #1c1f23; }
+    justify-content: center; }
     .menu-wrap .hamburger:after {
       content: "Menu";
       width: 50px;
@@ -387,8 +400,7 @@ section {
       position: relative; }
       .menu-wrap .menu div:before {
         content: "";
-        background: #1c1f23;
-        opacity: 0.9;
+        background: rgba(0, 0, 0, 0.5);
         position: absolute;
         top: -5;
         left: -5;
