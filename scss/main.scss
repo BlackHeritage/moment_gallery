@@ -1,44 +1,15 @@
 @import "keyframes";
 @import "variables";
+@import "reset";
 @import "utilities";
 @import "gallery";
 @import "disclamer";
 @import "menu";
-@import "reset";
-@import "tablet";
+@import "navbar";
 @import "footers";
-@import "mobile";
 @import "coming-soon";
-
-body {
-  font-family: "Roboto", sans-serif;
-  position: relative;
-  z-index: 1;
-  background: #fff;
-}
-
-/*////////////////////////*/
-/*//////// Navbar ////////*/
-/*////////////////////////*/
-#navbar {
-  background: #1c1f23;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  text-align: center;
-  height: 70px;
-  width: 100%;
-  padding: 0px 10px;
-  opacity: 1;
-  position: fixed;
-  z-index: 1;
-}
-#navbar .logo {
-  color: #fff;
-  margin: 0.5rem 1rem;
-  padding: 0.5rem 1rem;
-  font-size: 3.5rem;
-}
+@import "tablet";
+@import "mobile";
 
 /*////////////////////////*/
 /*//////// Showcase //////*/
