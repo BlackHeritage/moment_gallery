@@ -60,22 +60,18 @@ h1,
 h2,
 h3,
 h4 {
-  font-family: "Lindau", sans-serif;
-  margin-top: 2rem; }
+  font-family: "Lindau", sans-serif; }
 
 li {
   color: #fff;
   font-size: 1.5rem;
-  padding: 8px 20px;
-  margin: 1rem 2rem; }
+  position: relative; }
 
 li a {
   color: inherit;
   text-decoration: none;
   transition: color 0.4s ease;
-  font-family: "Lindau", sans-serif;
-  border-bottom: 1px solid rgba(255, 255, 255, 0.5);
-  padding-top: 3rem; }
+  font-family: "Lindau", sans-serif; }
 
 li a:hover {
   color: var(--secondary-color);
@@ -105,8 +101,8 @@ li a:hover {
 .container {
   max-width: 600rem;
   margin: 0 auto;
-  padding: 2rem 4rem;
-  margin: 0rem 4rem; }
+  padding: 2rem 2rem;
+  margin: 0rem 2rem; }
 
 section {
   width: 100%;
@@ -189,8 +185,9 @@ section {
       width: 100%;
       height: 0%;
       opacity: 0;
-      background: rgba(0, 0, 0, 0.3);
-      transition: all 500ms ease; }
+      background: rgba(0, 0, 0, 0.2);
+      transition: all 500ms ease;
+      box-shadow: inset 0 0 100px 10px rgba(0, 0, 0, 0.2); }
     #main-gallery .grid-item:hover:before {
       height: 100%;
       opacity: 1; }
@@ -397,15 +394,15 @@ section {
         transition: opacity 0.4s ease; }
         .menu-wrap .menu div div ul li {
           color: #fff;
-          padding: 0.1rem !important; }
+          padding: 0rem !important;
+          margin-bottom: 0.5rem; }
           .menu-wrap .menu div div ul li a {
             color: #fff;
             text-decoration: none;
             transition: color 0.4s ease;
             font-family: "Lindau", sans-serif;
             font-size: 1rem;
-            border-bottom: 1px solid rgba(255, 255, 255, 0.5) !important;
-            padding: 1rem; }
+            padding: 0.5rem; }
             .menu-wrap .menu div div ul li a:hover {
               color: var(--secondary-color);
               border: 1px solid #fff !important; }
@@ -424,12 +421,13 @@ section {
   padding: 0px 10px;
   opacity: 1;
   position: fixed;
-  z-index: 1; }
+  z-index: 1;
+  text-transform: uppercase; }
   #navbar .logo {
     color: #fff;
     margin: 0.5rem 1rem;
     padding: 0.5rem 1rem 0.7rem 1rem;
-    font-size: 3rem; }
+    font-size: 3rem !important; }
 
 .footer {
   display: flex;
@@ -496,15 +494,25 @@ section {
     grid-template-columns: repeat(3, 1fr); } }
 
 @media (max-width: 850px) {
+  #navbar h1 {
+    font-size: 1rem; }
   #main-gallery .grid {
     display: grid;
     grid-template-columns: repeat(2, 1fr); }
+  #disclamer-hero .disclamer-hero-container {
+    padding: 1rem; }
+    #disclamer-hero .disclamer-hero-container h1 {
+      font-size: 2rem;
+      font-weight: 900;
+      font-family: "Mukta", sans-serif;
+      line-height: 0.8;
+      margin: 5rem 0 1rem 0; }
   #disclamer .disclamer-grid {
     grid-template-areas: "disclamer" "form"; }
     #disclamer .disclamer-grid .disclamer-text {
       padding-bottom: 2rem; }
       #disclamer .disclamer-grid .disclamer-text .text-group h2 {
-        font-size: 0.2rem;
+        font-size: 2rem;
         padding-bottom: 1rem;
         text-align: left; }
       #disclamer .disclamer-grid .disclamer-text .text-group p {
@@ -527,8 +535,6 @@ section {
       color: #fff; } }
 
 @media (max-width: 500px) {
-  #navbar .logo {
-    font-size: 0.4rem !important; }
   .hero #showcase .showcase-group p {
     margin: 0.5rem 1rem;
     padding: 0.5rem 1rem;
@@ -546,7 +552,7 @@ section {
     margin: 0 auto; }
     #main-gallery .page-header .container h2 {
       margin: 5rem 0 0 0;
-      font-size: 1rem; }
+      font-size: 3rem; }
   #main-gallery .section-header .container {
     margin: 0 auto;
     padding: 0; }
@@ -575,18 +581,26 @@ section {
     margin: 0;
     color: #fff;
     text-align: right; }
+  #disclamer-hero .disclamer-hero-container {
+    padding: 1rem; }
+    #disclamer-hero .disclamer-hero-container h1 {
+      font-size: 2rem;
+      font-weight: 900;
+      font-family: "Mukta", sans-serif;
+      line-height: 0.8;
+      margin: 5rem 0 1rem 0; }
   #disclamer .disclamer-grid {
-    grid-template-areas: "disclamer" "form"; }
+    display: flex;
+    flex-direction: column; }
     #disclamer .disclamer-grid .disclamer-text {
-      padding-bottom: 2rem; }
+      text-align: center; }
       #disclamer .disclamer-grid .disclamer-text .text-group h2 {
-        font-size: 1.5rem;
-        padding-bottom: 1rem;
-        text-align: left; }
+        font-size: 2rem; }
       #disclamer .disclamer-grid .disclamer-text .text-group p {
-        line-height: 1.6rem;
-        font-size: 0.75rem;
-        text-align: left; } }
+        color: #222; }
+    #disclamer .disclamer-grid .contact-form input {
+      width: 100%;
+      margin: 0 0 1rem 0rem; } }
 
 @media (max-width: 400px) {
   #navbar .logo {

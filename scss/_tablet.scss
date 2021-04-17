@@ -8,12 +8,31 @@
 }
 
 @media (max-width: 850px) {
+  #navbar {
+    h1 {
+      font-size: 1rem;
+    }
+  }
   #main-gallery {
     .grid {
       display: grid;
       grid-template-columns: repeat(2, 1fr);
     }
   }
+
+  #disclamer-hero {
+    .disclamer-hero-container {
+      padding: 1rem;
+      h1 {
+        font-size: 2rem;
+        font-weight: 900;
+        font-family: "Mukta", sans-serif;
+        line-height: 0.8;
+        margin: 5rem 0 1rem 0;
+      }
+    }
+  }
+
   #disclamer {
     .disclamer-grid {
       grid-template-areas: "disclamer" "form";
@@ -21,7 +40,7 @@
         padding-bottom: 2rem;
         .text-group {
           h2 {
-            font-size: 0.2rem;
+            font-size: 2rem;
             padding-bottom: 1rem;
             text-align: left;
           }
@@ -34,6 +53,7 @@
       }
     }
   }
+
   #coming-soon {
     background: url(../img/under-construction/under-construction.jpg) no-repeat
       center center/cover;
