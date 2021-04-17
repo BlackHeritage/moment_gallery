@@ -2,18 +2,15 @@
   .hero {
     #showcase {
       .showcase-group {
+        margin-top: 13rem !important;
         p {
-          margin: 0.5rem 1rem;
-          padding: 0.5rem 1rem;
+          margin: 0rem 1rem !important;
+          padding: 0rem 1rem !important;
           font-size: 0.5rem;
-          animation-name: slideInTop;
-          animation-timing-function: ease-in;
-          animation-duration: 750ms;
-          font-weight: bolder;
-          color: #eee;
         }
         h3 {
           font-size: 3rem !important;
+          line-height: 2.5rem !important;
         }
 
         a {
