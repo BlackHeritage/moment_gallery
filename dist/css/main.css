@@ -131,6 +131,12 @@ section {
   background: #000;
   margin: 0 auto; }
 
+.my-05 {
+  margin-top: 0.5rem; }
+
+.my-1 {
+  margin-top: 1rem; }
+
 .my-2 {
   margin: 2rem; }
 
@@ -218,22 +224,25 @@ section {
     #disclamer .disclamer-grid .disclamer-text {
       grid-area: disclamer;
       margin-right: 5rem; }
-      #disclamer .disclamer-grid .disclamer-text h2 {
-        font-size: 1.5rem;
-        padding-bottom: 1rem;
-        text-align: left; }
-      #disclamer .disclamer-grid .disclamer-text p {
-        line-height: 1.6rem;
-        font-size: 0.75rem;
-        text-align: left; }
+      #disclamer .disclamer-grid .disclamer-text .text-group {
+        margin-bottom: 1rem; }
+        #disclamer .disclamer-grid .disclamer-text .text-group h2 {
+          font-size: 1.5rem;
+          text-align: left;
+          padding-bottom: 0.5rem !important; }
+        #disclamer .disclamer-grid .disclamer-text .text-group p {
+          line-height: 1.6rem;
+          font-size: 0.75rem;
+          text-align: left; }
     #disclamer .disclamer-grid .contact-form {
       grid-area: form;
       background: linear-gradient(45deg, #833ab4, #fd1d1d, #fcb045);
-      padding: 1rem 2rem;
-      text-align: left; }
+      padding: 1.5rem 2rem;
+      text-align: left;
+      color: #fff; }
       #disclamer .disclamer-grid .contact-form h1 {
         font-size: 2rem;
-        margin: 0rem 0rem 1rem 0rem; }
+        margin: 0rem 0rem 0.5rem 0rem; }
       #disclamer .disclamer-grid .contact-form p {
         padding-bottom: 1rem;
         font-size: 0.75rem; }
@@ -242,10 +251,11 @@ section {
         margin: 0 0.3rem 0.5rem 0.3rem;
         display: inline-block;
         width: 45%;
-        border-radius: 5px; }
+        border-radius: 5px;
+        margin-bottom: 1rem; }
       #disclamer .disclamer-grid .contact-form textarea {
         padding: 0.5rem 1rem;
-        margin-bottom: 0.5rem;
+        margin-bottom: 1rem;
         width: 100%;
         border: none;
         border-radius: 5px; }
@@ -493,8 +503,10 @@ section {
     display: grid;
     grid-template-columns: repeat(3, 1fr); } }
 
-@media (max-width: 850px) {
+@media (max-width: 863px) {
   #navbar h1 {
+    font-size: 1rem; }
+  #hero .showcase .showcase-group h3 {
     font-size: 1rem; }
   #main-gallery .grid {
     display: grid;
@@ -510,7 +522,8 @@ section {
   #disclamer .disclamer-grid {
     grid-template-areas: "disclamer" "form"; }
     #disclamer .disclamer-grid .disclamer-text {
-      padding-bottom: 2rem; }
+      padding-bottom: 2rem;
+      margin: 0; }
       #disclamer .disclamer-grid .disclamer-text .text-group h2 {
         font-size: 2rem;
         padding-bottom: 1rem;
@@ -595,7 +608,7 @@ section {
     #disclamer .disclamer-grid .disclamer-text {
       text-align: center; }
       #disclamer .disclamer-grid .disclamer-text .text-group h2 {
-        font-size: 2rem; }
+        font-size: 1rem; }
       #disclamer .disclamer-grid .disclamer-text .text-group p {
         color: #222; }
     #disclamer .disclamer-grid .contact-form input {
@@ -670,11 +683,13 @@ section {
         z-index: 10;
         padding: 0.5rem 1rem;
         font-size: 1rem;
+        font-family: "Dosis", sans-serif;
         animation-name: slideInTop;
         animation-timing-function: ease-in;
         animation-duration: 750ms;
-        font-weight: bolder;
-        color: #ddd; }
+        font-weight: bold;
+        color: #ddd;
+        text-transform: uppercase; }
       .hero #showcase .showcase-group h3 {
         color: #fff;
         z-index: 10;
@@ -684,13 +699,15 @@ section {
         animation-timing-function: ease-out;
         animation-duration: 750ms;
         animation-delay: 200ms;
-        margin-bottom: 2rem; }
+        margin-bottom: 2rem;
+        line-height: 5rem; }
       .hero #showcase .showcase-group a {
         animation-name: appear;
         animation-timing-function: ease-out;
         animation-duration: 1500ms;
         animation-delay: 500ms;
-        animation-iteration-count: 1; }
+        animation-iteration-count: 1;
+        border-radius: 3px; }
 
 .page-header h2 {
   font-size: 8rem;

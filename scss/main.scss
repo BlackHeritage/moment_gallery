@@ -53,11 +53,13 @@
         z-index: 10;
         padding: 0.5rem 1rem;
         font-size: 1rem;
+        font-family: "Dosis", sans-serif;
         animation-name: slideInTop;
         animation-timing-function: ease-in;
         animation-duration: 750ms;
-        font-weight: bolder;
+        font-weight: bold;
         color: #ddd;
+        text-transform: uppercase;
       }
       h3 {
         color: #fff;
@@ -69,6 +71,7 @@
         animation-duration: 750ms;
         animation-delay: 200ms;
         margin-bottom: 2rem;
+        line-height: 5rem;
       }
       a {
         animation-name: appear;
@@ -76,6 +79,7 @@
         animation-duration: 1500ms;
         animation-delay: 500ms;
         animation-iteration-count: 1;
+        border-radius: 3px;
       }
     }
   }

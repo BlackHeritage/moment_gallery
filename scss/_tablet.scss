@@ -7,10 +7,20 @@
   }
 }
 
-@media (max-width: 850px) {
+@media (max-width: 863px) {
   #navbar {
     h1 {
       font-size: 1rem;
+    }
+  }
+
+  #hero {
+    .showcase {
+      .showcase-group {
+        h3 {
+          font-size: 1rem;
+        }
+      }
     }
   }
   #main-gallery {
@@ -38,6 +48,7 @@
       grid-template-areas: "disclamer" "form";
       .disclamer-text {
         padding-bottom: 2rem;
+        margin: 0;
         .text-group {
           h2 {
             font-size: 2rem;
