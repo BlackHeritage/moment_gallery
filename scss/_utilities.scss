@@ -37,6 +37,13 @@ section {
   display: grid;
   place-items: center;
 }
+
+.container-recaptcha {
+  width: 100%;
+  margin: 0 auto;
+}
+
+// Padding
 .py-1 {
   padding: 1rem;
 }
@@ -59,9 +66,6 @@ section {
 }
 
 // Margins
-.my-05 {
-  margin-top: 0.5rem;
-}
 .my-1 {
   margin-top: 1rem;
 }
